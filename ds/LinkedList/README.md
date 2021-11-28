@@ -13,3 +13,4 @@
 - reverse `LinkedList`
 - add two `LinkedList` to form a new one
 - find cyclic nodes in `LinkedList`
+- remove duplicates from `LinkedList`
