@@ -9,20 +9,23 @@ class LinkedList {
 }
 
 function reverseLL(head: LinkedList) {
-  // Write your code here.
+  // pointer prev: set prev to null for first node reverse
   let prev: null | LinkedList = null;
-  while (head.next !== null) {
-    let curr = head; // 0
-    let next = curr.next; // 1
+  // pointer curr: for moving from start to end of LL
+  let curr: null | LinkedList = head;
+  // end loop when curr === null
+  while (curr !== null) {
+    // keep reference of next
+    let next = curr.next;
+    // move next pointer of curr to prev pointer
     curr.next = prev;
+    // update previous poiner to current
     prev = curr;
-    if (next === null) {
-      break;
-    }
-    head = next;
+    // move the curr pointer forward to the next pointer
+    curr = next;
   }
-  head.next = prev;
-  return head;
+  // prev pointer will be final head
+  return prev;
 }
 
 const createLL = (arr: Array<number>) => {

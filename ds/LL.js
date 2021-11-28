@@ -6,20 +6,23 @@ var LinkedList = /** @class */ (function () {
     return LinkedList;
 }());
 function reverseLL(head) {
-    // Write your code here.
+    // pointer prev: set prev to null for first node reverse
     var prev = null;
-    while (head.next !== null) {
-        var curr = head; // 0
-        var next = curr.next; // 1
+    // pointer curr: for moving from start to end of LL
+    var curr = head;
+    // end loop when curr === null
+    while (curr !== null) {
+        // keep reference of next
+        var next = curr.next;
+        // move next pointer of curr to prev pointer
         curr.next = prev;
+        // update previous poiner to current
         prev = curr;
-        if (next === null) {
-            break;
-        }
-        head = next;
+        // move the curr pointer forward to the next pointer
+        curr = next;
     }
-    head.next = prev;
-    return head;
+    // prev pointer will be final head
+    return prev;
 }
 var createLL = function (arr) {
     var head = new LinkedList(arr[0]);
