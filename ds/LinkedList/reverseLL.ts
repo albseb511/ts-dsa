@@ -1,12 +1,4 @@
-class LinkedList {
-  value: number;
-  next: LinkedList | null;
-
-  constructor(value: number) {
-    this.value = value;
-    this.next = null;
-  }
-}
+import LinkedList from "./LinkedList/LinkedList";
 
 function reverseLL(head: LinkedList) {
   // pointer prev: set prev to null for first node reverse
