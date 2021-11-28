@@ -7,7 +7,7 @@
 
 ## Functions 
 - LinkedList node
-- create Linked List from Array<number>
+- create Linked List from `Array<number>`
 - print LinkedList iteratively
 - merge two sorted LinkedList
 - reverse LinkedList
