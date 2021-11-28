@@ -11,3 +11,5 @@
 - print `LinkedList` iteratively
 - merge two sorted `LinkedList`
 - reverse `LinkedList`
+- add two `LinkedList` to form a new one
+- find cyclic nodes in `LinkedList`
