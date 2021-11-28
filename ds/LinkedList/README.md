@@ -15,3 +15,4 @@
 - find cyclic nodes in `LinkedList`
 - remove duplicates from `LinkedList`
 - shift `LinkedList`
+- added remove kth node from tail of `LinkedList`
